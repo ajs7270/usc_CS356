@@ -39,6 +39,7 @@
   data from its address space.  Instructions leaking private data are
   executed out-of-order because of branch misprediction.
 
+```
 
 
 ## Static and Dynamic Libraries
