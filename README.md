@@ -1,4 +1,4 @@
-# CS356 Final (Tue May 12th, 2020 at 8am PDT)
+# CS356 Final
 
 ## Spectre and Meltdown Attacks
 
@@ -44,7 +44,7 @@
 
 ## Static and Dynamic Libraries
 
-[3/4 points] Explain how static and dynamic C libraries work in Linux,
+[0/4 points] Explain how static and dynamic C libraries work in Linux,
 highlighting the advantages/disadvantages of each approach.
 (No need to provide code or command-line examples.)
 
@@ -95,14 +95,14 @@ approaches.
 
 Consider the 8-bit sequence "11001101":
 
-[2/2 points] What is the value assuming an 8-bit *unsigned* integer
+[0/2 points] What is the value assuming an 8-bit *unsigned* integer
            encoding?
 
 ```
 128+64+8+4+1 = 205
 ```
 
-[2/2 points] What is the value assuming an 8-bit *signed* integer
+[0/2 points] What is the value assuming an 8-bit *signed* integer
            encoding?
 
 ```
@@ -116,7 +116,7 @@ Consider the 8-bit sequence "11001101":
 Assume a 12-bit floating-point representation
 (1 sign bit, 5 exponent bits excess-15, and 6 fraction bits).
 
-[4/4 points] Then, the sequence 0 10000 111000 (a 12-bit FP) encodes the
+[0/4 points] Then, the sequence 0 10000 111000 (a 12-bit FP) encodes the
            decimal number:
 
 ```
@@ -200,7 +200,7 @@ Consider a processor with:
 12
 ```
 
-[2/2 points] If the hit rate is 0.9, the hit time 20 ns, the miss
+[0/2 points] If the hit rate is 0.9, the hit time 20 ns, the miss
            penalty 300 ns, what is the cache average access time?
 
 ```
@@ -308,15 +308,15 @@ stall due to the `ld` miss?
 
 When `ld 0(%rdi),%rax` has a miss:
 
-[1/1 point]  `addq %rax,%rbx` will `  Stall`
+[0/1 point]  `addq %rax,%rbx` will `  Stall`
 
-[-1/1 point]  `addq %rdi,%rdx` will ` Execute`
+[0/1 point]  `addq %rdi,%rdx` will ` Execute`
 
-[1/1 point]  `addq %rdx,%rcx` will ` Execute`
+[0/1 point]  `addq %rdx,%rcx` will ` Execute`
 
-[-1/1 point]  `addq %rbx,%rcx` will `Stall `
+[0/1 point]  `addq %rbx,%rcx` will `Stall `
 
-[-1/1 point]  `addq %rdx,%rsi` will `Execute`
+[0/1 point]  `addq %rdx,%rsi` will `Execute`
 
 (-1 point for wrong answers)
 
@@ -405,7 +405,7 @@ L1:
   jne %rdi,%rbp,L1
 ```
 
-[3/14 points] The schedule with best IPC is:
+[0/14 points] The schedule with best IPC is:
 
 ```
 ======== ALU / Branch ======== | ======== Load / Store ========
@@ -468,7 +468,7 @@ static int find1(int *array) {
 
 ## Assembly to C translation
 
-[2/15 points] Fill in the blanks of the C source file given its x86-64 assembly.
+[0/15 points] Fill in the blanks of the C source file given its x86-64 assembly.
             (sete %reg writes the zero flag ZF in the register %reg)
 
 ```
